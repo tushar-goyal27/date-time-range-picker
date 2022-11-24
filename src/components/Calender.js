@@ -11,7 +11,7 @@ const Calender = (props) => {
         min: 59
     });
     const [selDateID, setSelDateID] = useState('NA');
-
+    
     const dateArr = []
     const numDays = new Date(dateData.year, dateData.month+1, 0).getDate();
     for (let i = 1; i <= numDays; i++) {
@@ -82,6 +82,16 @@ const Calender = (props) => {
             })
         }
     }, [dateData, timeData, selDateID])
+
+    // handle state change after minYear or minMonth is changed
+    useEffect(() => {
+        if(props.minYear != 1950 || props.minMonth != 0) {
+            setdateData({
+                month: props.minMonth,
+                year: props.minYear
+            })
+        }
+    }, [props.minYear, props.minMonth])
 
     return(
         <div className="calender mx-3">
