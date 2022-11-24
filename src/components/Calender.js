@@ -85,7 +85,7 @@ const Calender = (props) => {
 
     // handle state change after minYear or minMonth is changed
     useEffect(() => {
-        if(props.minYear != 1950 || props.minMonth != 0) {
+        if((props.minYear != 1950 || props.minMonth != 0) && (dateData.year <= props.minYear || dateData.month <= props.minMonth)) {
             setdateData({
                 month: props.minMonth,
                 year: props.minYear
