@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/date-time-range-picker/static/css/main.42cb1b71.css",
+    "main.js": "/date-time-range-picker/static/js/main.2044f9ef.js",
+    "index.html": "/date-time-range-picker/index.html",
+    "main.42cb1b71.css.map": "/date-time-range-picker/static/css/main.42cb1b71.css.map",
+    "main.2044f9ef.js.map": "/date-time-range-picker/static/js/main.2044f9ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42cb1b71.css",
+    "static/js/main.2044f9ef.js"
+  ]
+}
